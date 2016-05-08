@@ -142,7 +142,7 @@ class SideNav extends \yii\widgets\Menu
         SideNavAsset::register($this->getView());
         $this->activateParents = true;
         $this->submenuTemplate = "\n<ul class='nav nav-pills nav-stacked'>\n{items}\n</ul>\n";
-        $this->linkTemplate = '<a href="{url}">{icon}{label}</a>';
+        $this->linkTemplate = '<a href="{url}" data-pjax="0">{icon}{label}</a>';
         $this->labelTemplate = '{icon}{label}';
         $this->markTopItems();
         Html::addCssClass($this->options, 'nav nav-pills nav-stacked kv-sidenav');
